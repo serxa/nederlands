@@ -1,50 +1,5 @@
-class Card {
-    constructor() {
-        this.state = 'init';
-        this.node = document.getElementById("card")
-        this.node.onclick = () => this.onAnswer();
-        document.getElementById("btn-y").onclick = () => this.onRight();
-        document.getElementById("btn-n").onclick = () => this.onWrong();
-    }
-
-    reset(q, a, onDone) {
-        this.question = q;
-        this.answer = a;
-        this.onDone = onDone;
-        this.state = 'question';
-
-        this.node.innerText = this.question;
-        document.getElementById("answer").style.display = "none";
-    }
-
-    onAnswer() {
-        if (this.state !== 'question') {
-            return;
-        }
-        this.state = 'answer';
-        this.node.innerText = this.answer;
-        document.getElementById("answer").style.display = "flex";
-    }
-
-    onRight() {
-        if (this.state !== 'answer') {
-            return;
-        }
-        this.state = 'done';
-        this.onDone(true);
-    }
-
-    onWrong() {
-        if (this.state !== 'answer') {
-            return;
-        }
-        this.state = 'done';
-        this.onDone(false);
-    }
-}
-
-DICTS = {
-    "adjectives-dec-23": [
+var DICTS = {
+    "adjectieven": [
         { ru: "длинный", nl: "lang" },
         { ru: "короткий", nl: "kort" },
         { ru: "высокий", nl: "hoog" },
@@ -97,20 +52,171 @@ DICTS = {
         { ru: "цветной", nl: "gekleurd" },
         { ru: "нижний", nl: "onder" },
         { ru: "верхний", nl: "boven" },
-        { ru: "хрупкий", nl: "zwak" },
+        { ru: "хрупкий", nl: "zwak" }
+    ],
+    "voornaamwoorden": [
+        { ru: "я", nl: "ik" },
+        { ru: "ты", nl: "je,jij" },
+        { ru: "Вы", nl: "u" },
+        { ru: "он", nl: "he,hij" },
+        { ru: "она", nl: "ze,zij" },
+        { ru: "оно", nl: "het" },
+        { ru: "мы", nl: "we,wij" },
+        { ru: "вы", nl: "julie" },
+        { ru: "они", nl: "ze,zij" },
+        { ru: "мой", nl: "mijn" },
+        { ru: "твой", nl: "jouw" },
+        { ru: "Ваш", nl: "uw" },
+        { ru: "его", nl: "zijn" },
+        { ru: "её", nl: "haar" },
+        { ru: "наш", nl: "ons,onze" },
+        { ru: "ваш", nl: "julie" },
+        { ru: "их", nl: "hun" }
+    ],
+    "getallen": [
+        { ru: "0", nl: "nul" },
+        { ru: "1", nl: "één" },
+        { ru: "2", nl: "twee" },
+        { ru: "3", nl: "drie" },
+        { ru: "4", nl: "vier" },
+        { ru: "5", nl: "vijf" },
+        { ru: "6", nl: "zes" },
+        { ru: "7", nl: "zeven" },
+        { ru: "8", nl: "acht" },
+        { ru: "9", nl: "negen" },
+        { ru: "10", nl: "tien" },
+        { ru: "11", nl: "elf" },
+        { ru: "12", nl: "twaalf" },
+        { ru: "13", nl: "dertien" },
+        { ru: "20", nl: "twintig" },
+        { ru: "30", nl: "dertig" },
+        { ru: "80", nl: "tachtig" },
+        { ru: "100", nl: "honderd" },
+        { ru: "1000", nl: "duizend" }
+    ],
+    "maanden": [
+        { ru: "январь", nl: "januari" },
+        { ru: "февраль", nl: "februari" },
+        { ru: "март", nl: "maart" },
+        { ru: "апрель", nl: "april" },
+        { ru: "май", nl: "mei" },
+        { ru: "июнь", nl: "juni" },
+        { ru: "июль", nl: "juli" },
+        { ru: "август", nl: "augustus" },
+        { ru: "сентябрь", nl: "september" },
+        { ru: "октябрь", nl: "oktober" },
+        { ru: "ноябрь", nl: "november" },
+        { ru: "декабрь", nl: "december" }
+    ],
+    "werkwoorden-1": [
+        { ru: "идти", nl: "gaan" },
+        { ru: "иметь", nl: "hebben" },
+        { ru: "быть", nl: "zijn" },
+        { ru: "смотреть", nl: "kijken" },
+        { ru: "слушать", nl: "luisteren" },
+        { ru: "играть", nl: "spelen" },
+        { ru: "работать", nl: "werken" },
+        { ru: "петь", nl: "zingen" },
+        { ru: "стирать", nl: "was doen" },
+        { ru: "пылесосить", nl: "stofzuigen" },
+        { ru: "покупать еду", nl: "boodshapen doen" },
+        { ru: "ходить по магазинам", nl: "winkelen" },
+        { ru: "выносить мусор", nl: "vuilniszakken buiten zetten" },
+        { ru: "готовить", nl: "koken" },
+        { ru: "убираться", nl: "poetsen" },
+        { ru: "гладить", nl: "strijken" },
+        { ru: "гулять", nl: "wandelen" },
+        { ru: "идти дождь", nl: "regen" },
+        { ru: "находить", nl: "vinden" },
+        { ru: "ставить", nl: "zetten" },
+        { ru: "говорить", nl: "zeggen" },
+        { ru: "сидеть", nl: "zitten" },
+        { ru: "видеть", nl: "zien" },
+        { ru: "есть", nl: "eten" },
+        { ru: "говорить на языке", nl: "spreken" },
+        { ru: "обедать", nl: "lunchen" },
+        { ru: "жить", nl: "wonen" },
+        { ru: "побеждать", nl: "winnen" },
+    ],
+    "werkwoorden-2": [
+        { ru: "отправляться", nl: "vertrekken" },
+        { ru: "брать", nl: "nemen" },
+        { ru: "покупать", nl: "kopen" },
+        { ru: "спрашивать", nl: "vragen" },
+        { ru: "отвечать", nl: "antwoorden" },
+        { ru: "стоять", nl: "staan" },
+        { ru: "вставать", nl: "opstaan" },
+        { ru: "оставаться", nl: "blijven" },
+        { ru: "приносить, носить", nl: "brengen" },
+        { ru: "мочь", nl: "kunnen" },
+        { ru: "завтракать", nl: "ontbijten" },
+        { ru: "бегать, ходить пешком", nl: "lopen" },
+        { ru: "есть конфетки", nl: "snoepen" },
+        { ru: "спать", nl: "slapen" },
+        { ru: "навещать", nl: "bezoeken" },
+        { ru: "носить одежду", nl: "dragen" },
+        { ru: "жаловаться", nl: "klagen" },
+        { ru: "писать по буквам", nl: "spellen" },
+        { ru: "отдыхать", nl: "rusten" },
+        { ru: "жениться", nl: "trouwen" }
     ],
     "test": [
-        { ru: "ходить", nl: "gaan" },
+        { ru: "идти", nl: "gaan" },
         { ru: "иметь", nl: "hebben" },
         { ru: "быть", nl: "zijn" }
     ]
+};
+
+class Card {
+    constructor() {
+        this.state = 'init';
+        this.node = document.getElementById("card");
+        this.node.onclick = () => this.onAnswer();
+        document.getElementById("btn-y").onclick = () => this.onRight();
+        document.getElementById("btn-n").onclick = () => this.onWrong();
+    }
+
+    reset(q, a, onDone) {
+        this.question = q;
+        this.answer = a;
+        this.onDone = onDone;
+        this.state = 'question';
+
+        this.node.innerText = this.question;
+        document.getElementById("answer").style.display = "none";
+    }
+
+    onAnswer() {
+        if (this.state !== 'question') {
+            return;
+        }
+        this.state = 'answer';
+        this.node.innerText = this.answer;
+        document.getElementById("answer").style.display = "flex";
+    }
+
+    onRight() {
+        if (this.state !== 'answer') {
+            return;
+        }
+        this.state = 'done';
+        this.onDone(true);
+    }
+
+    onWrong() {
+        if (this.state !== 'answer') {
+            return;
+        }
+        this.state = 'done';
+        this.onDone(false);
+    }
 }
 
-class Main {
-    constructor() {
-        this.card = new Card();
+class Exercise {
+    constructor(card, words) {
+        this.card = card;
+        this.words = words;
         this.id = -1;
-        this.words = DICTS["adjectives-dec-23"];
         for (let word of this.words) {
             word.total = 0;
             word.right = 0;
@@ -189,5 +295,48 @@ class Main {
     }
 }
 
-let main = new Main();
-main.run();
+class DictList {
+    constructor() {
+        this.card = new Card();
+        this.selected = [];
+    }
+
+    render() {
+        let dicts = document.getElementById("dicts");
+        let html = '';
+        for (let name in DICTS) {
+            html += `<div id="dict-${name}" class="dicts-item">${name}</div>`;
+        }
+        dicts.innerHTML = html;
+        for (let name in DICTS) {
+            document.getElementById(`dict-${name}`).onclick = () => this.onToggle(name);
+        }
+        document.getElementById("btn-exercise").onclick = () => this.onRun();
+    }
+
+    onToggle(name) {
+        let node = document.getElementById(`dict-${name}`);
+        let idx = this.selected.indexOf(name);
+        if (idx == -1) {
+            this.selected.push(name);
+            node.classList.add("dicts-item-selected");
+        } else {
+            this.selected.splice(idx, 1);
+            node.classList.remove("dicts-item-selected");
+        }
+    }
+
+    onRun() {
+        document.getElementById("card").style.display = "";
+        document.getElementById("dicts").style.display = "none";
+        document.getElementById("dicts-menu").style.display = "none";
+        let words = [];
+        for (let name of this.selected) {
+            for (let word of DICTS[name]) {
+                words.push(word);
+            }
+        }
+        let excecise = new Exercise(this.card, words);
+        excecise.run();
+    }
+}

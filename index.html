@@ -13,6 +13,20 @@
         <div id="btn-y" class="button button-green">JA</div>
         <div id="btn-n" class="button button-red">NEE</div>
     </div>
+
+    <div id="dicts" class="dicts">
+    </div>
+    <div id="dicts-menu" class="buttons">
+        <div id="btn-exercise" class="button button-green">Oefening</div>
+    </div>
+
     <script src="nederlands.js"></script>
+    <script>
+        document.getElementById("card").style.display = "none";
+        document.getElementById("answer").style.display = "none";
+
+        let dictList = new DictList();
+        dictList.render();
+    </script>
 </body>
 </html>
