@@ -94,20 +94,6 @@ var DICTS = {
         { ru: "100", nl: "honderd" },
         { ru: "1000", nl: "duizend" }
     ],
-    "maanden": [
-        { ru: "январь", nl: "januari" },
-        { ru: "февраль", nl: "februari" },
-        { ru: "март", nl: "maart" },
-        { ru: "апрель", nl: "april" },
-        { ru: "май", nl: "mei" },
-        { ru: "июнь", nl: "juni" },
-        { ru: "июль", nl: "juli" },
-        { ru: "август", nl: "augustus" },
-        { ru: "сентябрь", nl: "september" },
-        { ru: "октябрь", nl: "oktober" },
-        { ru: "ноябрь", nl: "november" },
-        { ru: "декабрь", nl: "december" }
-    ],
     "werkwoorden-1": [
         { ru: "идти", nl: "gaan" },
         { ru: "иметь", nl: "hebben" },
@@ -160,10 +146,41 @@ var DICTS = {
         { ru: "отдыхать", nl: "rusten" },
         { ru: "жениться", nl: "trouwen" }
     ],
-    "test": [
-        { ru: "идти", nl: "gaan" },
-        { ru: "иметь", nl: "hebben" },
-        { ru: "быть", nl: "zijn" }
+    "3 Jan": [
+        { ru: "лемон", nl: "citroen" },
+        { ru: "улица", nl: "straat" },
+        { ru: "строить", nl: "gebouwen" },
+        { ru: "здание", nl: "gebouw" },
+        { ru: "автострада", nl: "snelweg" },
+        { ru: "дорога", nl: "weg" },
+        { ru: "отмечать ДР", nl: "verjaaren" },
+        { ru: "день рождения", nl: "verjaardag" },
+        { ru: "рождаться", nl: "geboren" },
+        { ru: "дата рождения", nl: "geboortedatum" },
+        { ru: "поздравлять", nl: "feliciteren" },
+        { ru: "поздравляю", nl: "feliciteerd, proficiat" },
+        { ru: "именинник", nl: "jarig" },
+        { ru: "пасха", nl: "pasen" },
+        { ru: "пн. после пасхи", nl: "pasensmaandag" },
+        { ru: "календарь", nl: "kalender" },
+        { ru: "дата", nl: "datum, data" },
+        { ru: "открытка", nl: "kaartje" },
+        { ru: "весна", nl: "lente, voorjaar" },
+        { ru: "осень", nl: "herfst, najaar" },
+        { ru: "лето", nl: "zomer" },
+        { ru: "зима", nl: "winter" },
+        { ru: "январь", nl: "januari" },
+        { ru: "февраль", nl: "februari" },
+        { ru: "март", nl: "maart" },
+        { ru: "апрель", nl: "april" },
+        { ru: "май", nl: "mei" },
+        { ru: "июнь", nl: "juni" },
+        { ru: "июль", nl: "juli" },
+        { ru: "август", nl: "augustus" },
+        { ru: "сентябрь", nl: "september" },
+        { ru: "октябрь", nl: "oktober" },
+        { ru: "ноябрь", nl: "november" },
+        { ru: "декабрь", nl: "december" }
     ]
 };
 
@@ -222,7 +239,6 @@ class Exercise {
             word.right = 0;
             word.maCorrect = 0.5; // correctness moving average
         };
-        console.log(this.words);
     }
 
     getWeight(w) {
@@ -247,7 +263,6 @@ class Exercise {
                 continue;
             }
             totalWeight += this.getWeight(this.words[i]);
-            console.log("CORRECTNESS", i, this.words[i].nl, this.words[i].maCorrect);
         }
         if (totalWeight == 0) {
             return -1;
@@ -263,7 +278,7 @@ class Exercise {
                 return i;
             }
         }
-        console.log("Error generating random word id in Main.select()");
+        console.log("Error generating random word id in Exercise.select()");
         return this.words.length - 1;
     }
 
@@ -274,7 +289,6 @@ class Exercise {
             return;
         }
         this.word = this.words[this.id];
-        console.log("SELECTED", this.id, this.word.nl);
         this.card.reset(this.word.ru, this.word.nl, (isCorrect) => this.gatherResult(isCorrect));
     }
 
@@ -284,7 +298,6 @@ class Exercise {
     }
 
     gatherResult(isCorrect) {
-        console.log("RESULT", isCorrect);
         this.word.total++;
         if (isCorrect) {
             this.word.right++;
