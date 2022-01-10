@@ -390,7 +390,7 @@ class DictList {
 
     render() {
         let dicts = document.getElementById("dicts");
-        let html = '';
+        let html = '<p>kies woordenboeken:</p>';
         for (let name in DICTS) {
             html += `<div id="dict-${name}" class="dicts-item">${name}</div>`;
         }
@@ -415,16 +415,18 @@ class DictList {
     }
 
     onRun(question_key, answer_key) {
-        document.getElementById("card").style.display = "";
-        document.getElementById("dicts").style.display = "none";
-        document.getElementById("dicts-menu").style.display = "none";
         let words = [];
         for (let name of this.selected) {
             for (let word of DICTS[name]) {
                 words.push(word);
             }
         }
-        let excecise = new Exercise(this.card, words, question_key, answer_key);
-        excecise.run();
+        if (words.length > 0) {
+            document.getElementById("card").style.display = "";
+            document.getElementById("dicts").style.display = "none";
+            document.getElementById("dicts-menu").style.display = "none";
+            let excecise = new Exercise(this.card, words, question_key, answer_key);
+            excecise.run();
+        }
     }
 }
