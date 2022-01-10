@@ -302,9 +302,11 @@ class Card {
 }
 
 class Exercise {
-    constructor(card, words) {
+    constructor(card, words, question_key, answer_key) {
         this.card = card;
         this.words = words;
+        this.question_key = question_key;
+        this.answer_key = answer_key;
         this.id = -1;
         for (let word of this.words) {
             word.total = 0;
@@ -361,7 +363,7 @@ class Exercise {
             return;
         }
         this.word = this.words[this.id];
-        this.card.reset(this.word.ru, this.word.nl, (isCorrect) => this.gatherResult(isCorrect));
+        this.card.reset(this.word[this.question_key], this.word[this.answer_key], (isCorrect) => this.gatherResult(isCorrect));
     }
 
     congratulate() {
@@ -396,7 +398,8 @@ class DictList {
         for (let name in DICTS) {
             document.getElementById(`dict-${name}`).onclick = () => this.onToggle(name);
         }
-        document.getElementById("btn-exercise").onclick = () => this.onRun();
+        document.getElementById("btn-ru-nl").onclick = () => this.onRun("ru", "nl");
+        document.getElementById("btn-nl-ru").onclick = () => this.onRun("nl", "ru");
     }
 
     onToggle(name) {
@@ -411,7 +414,7 @@ class DictList {
         }
     }
 
-    onRun() {
+    onRun(question_key, answer_key) {
         document.getElementById("card").style.display = "";
         document.getElementById("dicts").style.display = "none";
         document.getElementById("dicts-menu").style.display = "none";
@@ -421,7 +424,7 @@ class DictList {
                 words.push(word);
             }
         }
-        let excecise = new Exercise(this.card, words);
+        let excecise = new Exercise(this.card, words, question_key, answer_key);
         excecise.run();
     }
 }
