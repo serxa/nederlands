@@ -221,6 +221,38 @@ var DICTS = {
         { ru: "нужно", nl: "heb ... nodig" },
         { ru: "прекрасный", nl: "heerlijk" },
         { ru: "снизу", nl: "beneden" }
+    ],
+    "10 Jan": [
+        { ru: "записываться на прием", nl: "afspraak maken" },
+        { ru: "парикмахер", nl: "kapper" },
+        { ru: "терапевт", nl: "huisarts" },
+        { ru: "стоматолог", nl: "tandarts" },
+        { ru: "я хотел бы", nl: "ik wil graag" },
+        { ru: "мыть", nl: "wassen" },
+        { ru: "стричь", nl: "knippen" },
+        { ru: "если можно", nl: "als het kan" },
+        { ru: "место", nl: "plek" },
+        { ru: "благодарить", nl: "bedanken" },
+        { ru: "жалоба", nl: "klacht" },
+        { ru: "поясница", nl: "onderrug" },
+        { ru: "подойти", nl: "langskomen" },
+        { ru: "возможный", nl: "mogelijk" },
+        { ru: "возможность", nl: "mogelijkheid" },
+        { ru: "резать", nl: "Snijden" },
+        { ru: "надевать", nl: "aankleden" },
+        { ru: "чистить зубы", nl: "tanden poetsen" },
+        { ru: "мыть голову", nl: "haar wassen" },
+        { ru: "печатать", nl: "typen" },
+        { ru: "подметать", nl: "vegen" },
+        { ru: "отдыхать", nl: "ontspannen" },
+        { ru: "давать постричь волосы", nl: "haar laten knippen" },
+        { ru: "просыпаться", nl: "wakker worden" },
+        { ru: "кормить", nl: "voeden" },
+        { ru: "курить", nl: "roken" },
+        { ru: "поливать", nl: "water geven" },
+        { ru: "брить", nl: "scheren" },
+        { ru: "принимать ванную", nl: "een bad nemen" },
+        { ru: "принимать душ", nl: "een douche nemen" }
     ]
 };
 
