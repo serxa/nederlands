@@ -255,8 +255,8 @@ var DICTS = {
         { ru: "принимать душ", nl: "een douche nemen" }
     ],
     "12 Jan": [
-        { ru: "повторять", nl: "Herhalen" },
-        { ru: "подходить", nl: "Passen" },
+        { ru: "повторять", nl: "herhalen" },
+        { ru: "подходить", nl: "passen" },
         { ru: "заполнять", nl: "invullen" },
         { ru: "данные", nl: "gegevens" },
         { ru: "формальный", nl: "formeel" },
