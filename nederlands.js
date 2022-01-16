@@ -282,6 +282,27 @@ var DICTS = {
         { ru: "постоянно", nl: "steeds" },
         { ru: "ждать", nl: "wachten" },
         { ru: "выходить развлечся", nl: "uitgaan" }
+    ],
+    "12 Jan": [
+        { ru: "встречаться", nl: "afspreken, ontmoeten" },
+        { ru: "следовать", nl: "volgen" },
+        { ru: "деревня", nl: "dorp" },
+        { ru: "журнал", nl: "krant" },
+        { ru: "иностранец", nl: "buitenlander" },
+        { ru: "потому что", nl: "want, omdat" },
+        { ru: "тарелка", nl: "bort" },
+        { ru: "раньше", nl: "vroeger" },
+        { ru: "довольный", nl: "blij" },
+        { ru: "забастовка", nl: "staking" },
+        { ru: "между", nl: "tussen" },
+        { ru: "злой", nl: "boos" },
+        { ru: "начальник", nl: "baas" },
+        { ru: "овощ", nl: "groente" },
+        { ru: "овощи", nl: "groenten" },
+        { ru: "фрукты", nl: "fruit" },
+        { ru: "уставший", nl: "moe" },
+        { ru: "почему", nl: "waarom" },
+        { ru: "хороший", nl: "fijn" }
     ]
 };
 
