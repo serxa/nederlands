@@ -112,7 +112,7 @@ var DICTS = {
         { ru: "убираться", nl: "poetsen" },
         { ru: "гладить", nl: "strijken" },
         { ru: "гулять", nl: "wandelen" },
-        { ru: "идти дождь", nl: "regenen" },
+        { ru: "идти дождь", nl: "regennen" },
         { ru: "находить", nl: "vinden" },
         { ru: "ставить", nl: "zetten" },
         { ru: "говорить", nl: "zeggen" },
@@ -283,7 +283,7 @@ var DICTS = {
         { ru: "ждать", nl: "wachten" },
         { ru: "выходить развлечся", nl: "uitgaan" }
     ],
-    "12 Jan": [
+    "14 Jan": [
         { ru: "встречаться", nl: "afspreken, ontmoeten" },
         { ru: "следовать", nl: "volgen" },
         { ru: "деревня", nl: "dorp" },
@@ -303,6 +303,43 @@ var DICTS = {
         { ru: "уставший", nl: "moe" },
         { ru: "почему", nl: "waarom" },
         { ru: "хороший", nl: "fijn" }
+    ],
+    "17 Jan": [
+        { ru: "градусы", nl: "graden" },
+        { ru: "светить", nl: "schijnen" },
+        { ru: "переменная облачность", nl: "halfbewolken" },
+        { ru: "тучи (глагол)", nl: "bewolken" },
+        { ru: "туча", nl: "wolk" },
+        { ru: "снег", nl: "sneeuw" },
+        { ru: "дождь с грозой", nl: "onweer" },
+        { ru: "ветер", nl: "wind" },
+        { ru: "дуть", nl: "waaien" },
+        { ru: "надувать", nl: "blazen" },
+        { ru: "туман", nl: "mist" },
+        { ru: "град", nl: "hagel" },
+        { ru: "град (глагол)", nl: "hagelen" },
+        { ru: "радуга", nl: "regenboog" },
+        { ru: "молния", nl: "bliksen" },
+        { ru: "гром", nl: "donder" },
+        { ru: "гром (глагол)", nl: "donderren" },
+        { ru: "пляж", nl: "strand" },
+        { ru: "солнечно", nl: "zonnig" },
+        { ru: "туманно", nl: "mistig" },
+        { ru: "погода", nl: "het weer" },
+        { ru: "полностью", nl: "volledig" },
+        { ru: "желать что-то", nl: "zin hebben van iets" },
+        { ru: "занятый", nl: "bezig" },
+        { ru: "отсутствующий", nl: "afwezig" },
+        { ru: "редко", nl: "heel soms" },
+        { ru: "иногда", nl: "soms, af en toe" },
+        { ru: "почти", nl: "bijna" },
+        { ru: "круассан", nl: "koffiekoekje" },
+        { ru: "многократно", nl: "meerdere keren" },
+        { ru: "единица чего-либо", nl: "stuk" },
+        { ru: "в большинстве случаев", nl: "meestal" },
+        { ru: "тяжелый", nl: "zwaar" },
+        { ru: "мягкий", nl: "zacht" },
+        { ru: "твердый", nl: "hard" }
     ]
 };
 
