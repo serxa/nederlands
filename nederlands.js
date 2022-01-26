@@ -456,6 +456,32 @@ var DICTS = {
         { ru: "тишина", nl: "stilte" },
         { ru: "тихий", nl: "stil" },
         { ru: "громкий", nl: "luid" }
+    ],
+    "24 Jan": [
+        { ru: "небо", nl: "hemel" },
+        { ru: "переезд", nl: "verhuizing" },
+        { ru: "лежать", nl: "liggen" },
+        { ru: "класть", nl: "leggen" },
+        { ru: "heel", nl: "целый, полный" },
+        { nl: "inademen", ru: "вдыхать" },
+        { nl: "uitademen", ru: "выдыхать" },
+        { nl: "aanvaarden", ru: "оценивать" },
+        { nl: "aanschouwen", ru: "предусматривать" },
+        { nl: "aanbidden", ru: "предлагать" },
+        { nl: "voorspellen", ru: "предсказывать" },
+        { nl: "weerman", ru: "синоптик" },
+        { nl: "doorzien", ru: "просматривать" },
+        { nl: "omhelzen", ru: "обнимать" },
+        { nl: "oversteken", ru: "переходить (дорогу)" },
+        { nl: "overschatten", ru: "переоценивать" },
+        { nl: "ondertekenen", ru: "подписывать" },
+        { nl: "onderschatten", ru: "недооценивать" },
+        { nl: "gebeuren", ru: "случаться, происходить" },
+        { nl: "binnenkomen", ru: "входить внутрь" },
+        { nl: "buitengaan", ru: "выходить" },
+        { nl: "thuisblijven", ru: "оставаться дома" },
+        { nl: "afdrogen", ru: "сушить" },
+        { nl: "recht", ru: "прямо" }
     ]
 };
 
