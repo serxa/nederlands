@@ -481,7 +481,31 @@ var DICTS = {
         { nl: "buitengaan", ru: "выходить" },
         { nl: "thuisblijven", ru: "оставаться дома" },
         { nl: "afdrogen", ru: "сушить" },
+        { nl: "hoek", ru: "угол" },
         { nl: "recht", ru: "прямо" }
+    ],
+    "26 Jan": [
+        { nl: "paken", ru: "схватить" },
+        { nl: "trouwens", ru: "кстати" },
+        { nl: "langzaam", ru: "медленный" },
+        { nl: "druk", ru: "занятый (не о человеке)" },
+        { nl: "transport middelen", ru: "транспортные средства" },
+        { nl: "praten", ru: "болтать" },
+        { nl: "afstand", ru: "расстояние" },
+        { nl: "beweging", ru: "движение" },
+        { nl: "toch", ru: "несмотря на, тем не менее" },
+        { nl: "dus", ru: "то есть, таким образом" },
+        { nl: "verliezen", ru: "терять" },
+        { nl: "last hebben van iets", ru: "страдать от чего-либо" },
+        { nl: "kleren", ru: "одежда" },
+        { nl: "ruim", ru: "просторный" },
+        { nl: "breed", ru: "широкий" },
+        { nl: "hangen", ru: "висеть" },
+        { nl: "spoor", ru: "путь" },
+        { nl: "dat past", ru: "держите без сдачи" },
+        { nl: "enkel ticket", ru: "билет в один конец" },
+        { nl: "heen en terug", ru: "туда и обратно" },
+        { nl: "doel", ru: "цель" }
     ]
 };
 
