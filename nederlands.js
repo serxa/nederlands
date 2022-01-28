@@ -554,10 +554,27 @@ class Card {
     }
 }
 
+function shuffled(arr) {
+    let res = [];
+    for (let e of arr) {
+        res.push(e);
+    }
+    for (let i = 0; i < res.length - 1; i++) {
+        let j = i + Math.floor(Math.random() * (res.length - i));
+        if (j != i) {
+            let tmp = res[i];
+            res[i] = res[j]
+            res[j] = tmp;
+        }
+    }
+    return res;
+}
+
 class Exercise {
     constructor(card, words, question_key, answer_key) {
         this.card = card;
         this.words = words;
+        this.deck = shuffled([...Array(this.words.length).keys()])
         this.question_key = question_key;
         this.answer_key = answer_key;
         this.id = -1;
@@ -582,7 +599,7 @@ class Exercise {
         return true;
     }
 
-    select() {
+    select_random() {
         let weights = [];
         let totalWeight = 0;
         for (let i = 0; i < this.words.length; i++) {
@@ -609,6 +626,19 @@ class Exercise {
         return this.words.length - 1;
     }
 
+    select_from_deck() {
+        if (this.deck.length > 0) {
+            return this.deck.shift();
+        } else {
+            return -1;
+        }
+    }
+
+    select() {
+        //return this.select_random();
+        return this.select_from_deck();
+    }
+
     run() {
         this.id = this.select();
         if (this.id == -1) {
@@ -628,6 +658,8 @@ class Exercise {
         this.word.total++;
         if (isCorrect) {
             this.word.right++;
+        } else {
+            this.deck.push(this.id); // add word under the deck to ask again later
         }
         let maCoef = 0.5;
         this.word.maCorrect = maCoef * this.word.maCorrect + (1 - maCoef) * (isCorrect ? 1 : 0);
