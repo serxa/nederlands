@@ -676,7 +676,9 @@ var DICTS = {
         { nl: "voorschrift", ru: "рецепт" },
         { nl: "geneesmiddel", ru: "лекарство" },
         { nl: "stempel", ru: "печать" },
-        { nl: "handtekening", ru: "подпись" }
+        { nl: "handtekening", ru: "подпись" },
+        { nl: "soeplepel", ru: "столовая ложка" },
+        { nl: "kleine lepel", ru: "чайная ложечка" }
     ]
 };
 
