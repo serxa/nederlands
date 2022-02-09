@@ -163,7 +163,15 @@ var DICTS = {
         { nl: "helaas", ru: "к несчастью" },
         { nl: "exacte", ru: "точный" },
         { nl: "later", ru: "позже" },
-        { nl: "alleen", ru: "только" }
+        { nl: "alleen", ru: "только" },
+        { nl: "beschikbaar", ru: "доступный" },
+        { nl: "afgelopen", ru: "прошедший" },
+        { nl: "aantal", ru: "некоторое кол-во" },
+        { nl: "voorstel", ru: "предложение" },
+        { nl: "toerist", ru: "турист" },
+        { nl: "beschadigen", ru: "повреждать" },
+        { nl: "vooral", ru: "в основном" },
+        { nl: "belangrijk", ru: "важный" }
     ],
     "3 Jan": [
         { ru: "лемон", nl: "citroen" },
@@ -599,8 +607,8 @@ var DICTS = {
         { nl: "ziekenfonds", ru: "фонд медицинского страхования" },
         { nl: "ziektebrief", ru: "больничный лист" },
         { nl: "waar doet pijner?", ru: "где болит?" },
-        { nl: "wat scheelt er? / Wat gebeurt?", ru: "что случилось?" },
-        { nl: "zich voellen", ru: "чувствовать себя" },
+        { nl: "Wat scheelt er? / Wat gebeurt?", ru: "что случилось?" },
+        { nl: "zich voelen", ru: "чувствовать себя" },
         { nl: "rode bes", ru: "красная смородина" },
         { nl: "pruim", ru: "слива" },
         { nl: "perzik", ru: "персик" },
@@ -642,7 +650,7 @@ var DICTS = {
         { nl: "het potlood", ru: "карандаш" },
         { nl: "rij", ru: "очередь" },
         { nl: "puntenslijper", ru: "точилка" },
-        { nl: "slijpen", ru: "заострять" },
+        { nl: "slijpen", ru: "точить" },
         { nl: "zand", ru: "песок" },
         { nl: "zandbak", ru: "песочница" },
         { nl: "schaar", ru: "ножницы" },
@@ -679,6 +687,41 @@ var DICTS = {
         { nl: "handtekening", ru: "подпись" },
         { nl: "soeplepel", ru: "столовая ложка" },
         { nl: "kleine lepel", ru: "чайная ложечка" }
+    ],
+    "4 Feb": [
+        { nl: "gewicht", ru: "вес" },
+        { nl: "boeiend", ru: "очаровательный" },
+        { nl: "verliezen", ru: "терять" },
+        { nl: "valies", ru: "чемодан" },
+        { nl: "fout", ru: "ошибка" },
+        { nl: "briefje", ru: "купюра" },
+        { nl: "bestellen", ru: "заказывать" },
+        { nl: "echtgenote", ru: "супруга" },
+        { nl: "echtgenoot", ru: "супруг" },
+        { nl: "afdeling", ru: "департамент" },
+        { nl: "meten", ru: "мерить" },
+        { nl: "lengte", ru: "рост" },
+        { nl: "gewicht", ru: "вес" },
+        { nl: "wegen", ru: "взвешивать" }
+    ],
+    "8 Feb": [
+        { nl: "zijn op zoek", ru: "находиться в поиске" },
+        { nl: "ja hoor", ru: "послушай" },
+        { nl: "iets, wat", ru: "немножечко" },
+        { nl: "tot en met", ru: "до ... включительно" },
+        { nl: "afdrogen", ru: "сушить" },
+        { nl: "me", ru: "возвратная частица (ik)" },
+        { nl: "je", ru: "возвратная частица (je)" },
+        { nl: "zich", ru: "возвратная частица (u)" },
+        { nl: "zich", ru: "возвратная частица (hij,ze)" },
+        { nl: "ons", ru: "возвратная частица (we)" },
+        { nl: "je", ru: "возвратная частица (jullie)" },
+        { nl: "zich", ru: "возвратная частица (zij)" },
+        { nl: "vergaderen", ru: "встречаться" },
+        { nl: "verzamelen", ru: "собирать" },
+        { nl: "pannenkoeken", ru: "блины" },
+        { nl: "rooster", ru: "распорядок" },
+        { nl: "lesrooster", ru: "расписание уроков" }
     ]
 };
 
