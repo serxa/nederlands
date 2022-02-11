@@ -764,7 +764,7 @@ var DICTS = {
         { nl: "(zijn) begonnen", ru: "beginnen -> VTT" },
         { nl: "(hebben) ontbeten", ru: "ontbijten -> VTT" },
         { nl: "(hebben) genomen ", ru: "nemen -> VTT" },
-        { nl: "(hebben) moeten", ru: "gemoeten -> VTT" },]
+        { nl: "(hebben) moeten", ru: "gemoeten -> VTT" },
     ]
 };
 
