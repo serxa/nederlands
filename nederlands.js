@@ -171,6 +171,10 @@ var DICTS = {
         { nl: "toerist", ru: "турист" },
         { nl: "beschadigen", ru: "повреждать" },
         { nl: "vooral", ru: "в основном" },
+        { nl: "weer", ru: "снова" },
+        { nl: "woonhuizen", ru: "жилые дома" },
+        { nl: "waardevol", ru: "ценный" },
+        { nl: "omgeving", ru: "окрестности" },
         { nl: "belangrijk", ru: "важный" }
     ],
     "3 Jan": [
@@ -345,7 +349,7 @@ var DICTS = {
         { ru: "град", nl: "hagel" },
         { ru: "град (глагол)", nl: "hagelen" },
         { ru: "радуга", nl: "regenboog" },
-        { ru: "молния", nl: "bliksen" },
+        { ru: "молния", nl: "bliksem" },
         { ru: "гром", nl: "donder" },
         { ru: "гром (глагол)", nl: "donderren" },
         { ru: "пляж", nl: "strand" },
@@ -367,7 +371,7 @@ var DICTS = {
         { ru: "мягкий", nl: "zacht" },
         { ru: "твердый", nl: "hard" }
     ],
-    "19 Jan": [ // <-- 10
+    "19 Jan": [
         { ru: "вещь", nl: "ding" },
         { ru: "лестница", nl: "trap" },
         { ru: "комната", nl: "kamer" },
@@ -722,6 +726,45 @@ var DICTS = {
         { nl: "pannenkoeken", ru: "блины" },
         { nl: "rooster", ru: "распорядок" },
         { nl: "lesrooster", ru: "расписание уроков" }
+    ],
+    "9 Feb": [
+        { nl: "sterven", ru: "умирать" },
+        { nl: "varen", ru: "плыть на корабле" },
+        { nl: "belasting", ru: "налог" },
+        { nl: "geleden", ru: "назад" },
+        { nl: "onderzoeken", ru: "осматривать, исследовать" }
+    ],
+    "11 Feb": [ // <-- 10 inclusive
+        { nl: "vorig", ru: "предыдущий" },
+        { nl: "schat", ru: "милый, дорогой" },
+        { nl: "slecht", ru: "плохо" },
+        { nl: "slecht gezind", ru: "в расстоенных чувствах (bad mood)" },
+        { nl: "haasten", ru: "торопить" },
+        { nl: "haasten zich", ru: "торопиться" },
+        { nl: "op het internet", ru: "в интернете" },
+        { nl: "noorderlicht", ru: "севрное сияние" },
+        { nl: "ijspegels", ru: "сосульки" },
+        { nl: "dauw", ru: "роса" },
+        { nl: "plas", ru: "лужа" },
+        { nl: "glad ijs", ru: "гололед" },
+        { nl: "sneeuwhoogte", ru: "сугроб" },
+        { nl: "zonsopgang", ru: "рассвет" },
+        { nl: "zonsondergang", ru: "закат" },
+        { nl: "sneewvlok", ru: "снежинка" },
+        { nl: "vries", ru: "иней, заморозки" },
+        { nl: "tsunami", ru: "цунами" },
+        { nl: "ijs", ru: "лед" },
+        { nl: "storm", ru: "шторм" },
+        { nl: "(hebben) aangedaan", ru: "aandoen -> VTT" },
+        { nl: "(zijn) geweest", ru: "zijn -> VTT" },
+        { nl: "(hebben) gezocht", ru: "zoeken -> VTT" },
+        { nl: "(hebben) gehad", ru: "habben -> VTT" },
+        { nl: "(zijn) gegaan", ru: "gaan -> VTT" },
+        { nl: "(hebben) gegeten", ru: "eten -> VTT" },
+        { nl: "(zijn) begonnen", ru: "beginnen -> VTT" },
+        { nl: "(hebben) ontbeten", ru: "ontbijten -> VTT" },
+        { nl: "(hebben) genomen ", ru: "nemen -> VTT" },
+        { nl: "(hebben) moeten", ru: "gemoeten -> VTT" },]
     ]
 };
 
