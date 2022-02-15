@@ -175,6 +175,7 @@ var DICTS = {
         { nl: "woonhuizen", ru: "жилые дома" },
         { nl: "waardevol", ru: "ценный" },
         { nl: "omgeving", ru: "окрестности" },
+        { nl: "beslissing", ru: "решение" },
         { nl: "belangrijk", ru: "важный" }
     ],
     "3 Jan": [
@@ -763,8 +764,24 @@ var DICTS = {
         { nl: "(hebben) gegeten", ru: "eten -> VTT" },
         { nl: "(zijn) begonnen", ru: "beginnen -> VTT" },
         { nl: "(hebben) ontbeten", ru: "ontbijten -> VTT" },
-        { nl: "(hebben) genomen ", ru: "nemen -> VTT" },
-        { nl: "(hebben) moeten", ru: "gemoeten -> VTT" },
+        { nl: "(hebben) genomen", ru: "nemen -> VTT" },
+        { nl: "(hebben) gemoeten", ru: "moeten -> VTT" },
+    ],
+    "14 Feb": [
+        { nl: "het hemd", ru: "рубашка" },
+        { nl: "zakenreis", ru: "деловая поездка" },
+        { nl: "zakenman", ru: "бизнесмен" },
+        { nl: "toen", ru: "когда, в то время как" },
+        { nl: "(zijn) aangekomen", ru: "aankomen -> VTT" },
+        { nl: "(hebben) afgewassen", ru: "afwassen -> VTT" },
+        { nl: "(hebben) gebakken", ru: "bakken -> VTT" },
+        { nl: "(hebben) bezocht", ru: "bezoeken -> VTT" },
+        { nl: "(zijn) gebleven", ru: "blijven -> VTT" },
+        { nl: "(hebben) gebroken", ru: "breken -> VTT" },
+        { nl: "(hebben) gebracht", ru: "brengen -> VTT" },
+        { nl: "(hebben) gedacht", ru: "denken -> VTT" },
+        { nl: "(hebben) gedaan", ru: "doen -> VTT" },
+        { nl: "(hebben) gedragen", ru: "dragen -> VTT" },
     ]
 };
 
