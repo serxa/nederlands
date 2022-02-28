@@ -879,6 +879,18 @@ var DICTS = {
         { nl: "betekenen", ru: "обозначать" },
         { nl: "tas", ru: "сумка" },
         { nl: "aandacht besteeden", ru: "уделять внимание" },
+    ],
+    "28 Feb": [
+        { nl: "bijten", ru: "кусать" },
+        { nl: "(hebben) gebeten", ru: "bijten -> VTT" },
+        { nl: "beet / beten", ru: "bijten -> OVT" },
+        { nl: "wekker aflopen", ru: "будильник прозвонит" },
+        { nl: "koffer", ru: "чемодан" },
+        { nl: "onder leiding", ru: "под руководством" },
+        { nl: "vanaf", ru: "начиная с" },
+        { nl: "verschillen", ru: "отличаться" },
+        { nl: "pas", ru: "только" },
+        { nl: "zowel ... als ...", ru: "и ... и ..." },
     ]
 };
 
