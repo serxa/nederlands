@@ -852,7 +852,7 @@ var DICTS = {
     ],
     "2 Mar -": [
     ],
-    "7 Mar": [
+    "7 Mar (maken / doen)": [
         { nl: "de afwas doen", ru: "мыть посуду" },
         { nl: "het huishouden doen", ru: "заниматься домашними делами" },
         { nl: "het neit meer doen", ru: "ломаться" },
@@ -874,9 +874,76 @@ var DICTS = {
     ],
     "11 Mar": [
         { nl: "in het oosten", ru: "на востоке" },
-        { nl: "bestan", ru: "состоять" },
-        { nl: "zoveel mogelijk", ru: "RURURU" },
+        { nl: "bestan uit", ru: "состоять из (consists of)" },
+        { nl: "zoveel mogelijk", ru: "как можно больше" },
+        { nl: "vierkante", ru: "квадратный" },
+        { nl: "regering", ru: "правительство" },
+        { nl: "toren", ru: "башня" },
+        { nl: "het gebied", ru: "площадь" },
     ],
+    "14 Mar": [
+        { nl: "kleding / kleren", ru: "одежда" },
+        { nl: "rok", ru: "убка" },
+        { nl: "jurk / het ", ru: "платье" },
+        { nl: "het jasje", ru: "курточка" },
+        { nl: "het overhemd", ru: "жилетка (официальная)" },
+        { nl: "het pak", ru: "костюм" },
+        { nl: "het vest", ru: "жилет" },
+        { nl: "blouse", ru: "блузка" },
+        { nl: "het T-shirt", ru: "майка" },
+        { nl: "het ondergoed", ru: "белье" },
+        { nl: "onderbroek", ru: "трусы" },
+        { nl: "het hemd", ru: "рубашка" },
+        { nl: "beha", ru: "бустгалтер" },
+        { nl: "sok", ru: "носок" },
+        { nl: "sokken", ru: "носки" },
+        { nl: "kous", ru: "чулки" },
+        { nl: "pantoffels", ru: "тапочки" },
+        { nl: "laars", ru: "сапог" },
+        { nl: "laarzen", ru: "сапоги" },
+        { nl: "handschoenen", ru: "варешки" },
+        { nl: "hoed", ru: "капюшон" },
+        { nl: "pet", ru: "кепка" },
+        { nl: "jas", ru: "куртка" },
+        { nl: "regenjas", ru: "дождевик" },
+        { nl: "portemonnee", ru: "кошелёк" },
+        { nl: "koffer", ru: "чемодан" },
+        { nl: "winkel", ru: "магазин" },
+        { nl: "het warenhuis", ru: "торговый центр" },
+        { nl: "markt", ru: "рынок" },
+        { nl: "uitverkoop", ru: "распродажа" },
+        { nl: "maat", ru: "размер" },
+        { nl: "kwaliteit", ru: "качество" },
+        { nl: "stof", ru: "ткань" },
+        { nl: "het katoen", ru: "хлопок" },
+        { nl: "het knoop", ru: "кнопка" },
+        { nl: "shoppen", ru: "заниматься шоппингом" },
+        { nl: "bestellen", ru: "заказывать" },
+        { nl: "verkopen", ru: "продавать" },
+        { nl: "terugsturen", ru: "возвращать" },
+        { nl: "passen", ru: "подходить, мерить" },
+        { nl: "ruilen", ru: "обменивать товар" },
+        { nl: "drogen", ru: "cушить" },
+        { nl: "smal", ru: "узкий" },
+        { nl: "breed", ru: "широкий" },
+        { nl: "strak", ru: "в обтяжку" },
+        { nl: "wijd", ru: "широкий фасон" },
+        { nl: "mouw", ru: "рукав" },
+        { nl: "rits", ru: "молния" },
+        { nl: "broekspijp", ru: "штанина" },
+        { nl: "partronen", ru: "узоры" },
+        { nl: "effen", ru: "однотонный" },
+
+        { nl: "verdwijnen", ru: "исчезать" },
+        { nl: "eruit ziet", ru: "выглядеть" },
+        { nl: "kwijten", ru: "терять" },
+        { nl: "verkorten", ru: "укорачивать" },
+        { nl: "NLNLNL", ru: "RURURU" },
+    ],
+
+    /*
+    */
+
     "OVT:1": [
         { nl: "deed aan / deden aan", ru: "aandoen -> OVT" },
         { nl: "kwam aan / kwamen aan", ru: "aankomen -> OVT" },
@@ -985,10 +1052,6 @@ var DICTS = {
         { nl: "moest / moesten", ru: "moeten -> OVT" },
     ],
 };
-
-/*
-
-*/
 
 class Card {
     constructor() {
